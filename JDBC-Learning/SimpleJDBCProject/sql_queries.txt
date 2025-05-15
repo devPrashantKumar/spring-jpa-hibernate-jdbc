@@ -1,0 +1,17 @@
+create database if not exists schoolManagement;
+
+use schoolManagement;
+
+show tables;
+
+create table student (
+    id int auto_increment primary key,
+    name varchar(100) not null,
+    age int not null,
+    marks double not null
+);
+
+insert into student(name,age,marks)
+values ("Prashant",10,100),("Vikas",9,95);
+
+drop table student;

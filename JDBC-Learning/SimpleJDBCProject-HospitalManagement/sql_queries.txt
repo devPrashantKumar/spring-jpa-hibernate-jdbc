@@ -1,0 +1,27 @@
+create database hospitalManagement;
+use hospitalManagement;
+
+show tables;
+
+create table patient (
+patientId int auto_increment primary key,
+patientName varchar(100),
+patientAdmitData timestamp default current_timestamp
+);
+
+create table doctor (
+doctorId int auto_increment primary key,
+doctorName varchar(100)
+);
+
+create table appointment (
+appointmentId int auto_increment primary key,
+patientId int references patient(patientid),
+doctorId int references doctor(doctorid),
+appointmentStartTime datetime,
+appointmentEndTime datetime
+);
+
+drop table patient;
+drop table doctor;
+drop table appointment;
