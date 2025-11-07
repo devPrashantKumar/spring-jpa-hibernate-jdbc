@@ -1,6 +1,7 @@
-package com.thecodeexperience.JPADemo02.Repository;
+package com.thecodeexperience.JPADemo03.Repository;
 
-import com.thecodeexperience.JPADemo02.Entity.Address;
+import com.thecodeexperience.JPADemo03.Entity.Address;
+import com.thecodeexperience.JPADemo03.Entity.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

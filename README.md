@@ -5,3 +5,7 @@
 - JPADemo02 - Spring JPA OneToOne Mapping Unidirectional Mapping
   - serialization error in case of lazy initialisation
   - N+1 query issue in case on Lazy Initialisation
+- JPADemo03 - Spring JPA OneToOne Mapping Bidirectional Mapping
+    - Jackson recursion issue. 
+      - JsonManagedReference and JsonBackReference
+      - JsonIdentityReference
