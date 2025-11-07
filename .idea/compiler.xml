@@ -9,7 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Demo0" />
       </profile>
-      <profile name="Annotation profile for SpringJDBCDemo01" enabled="true">
+      <profile name="Annotation profile for JPADemo02" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -17,13 +17,19 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
         </processorPath>
         <module name="JPADemo01" />
+        <module name="JPADemo02" />
         <module name="SpringJDBCDemo01" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="JPADemo01 (1)" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="JPADemo01" options="-parameters" />
+      <module name="JPADemo01 (1)" options="-parameters" />
+      <module name="JPADemo02" options="-parameters" />
       <module name="SpringJDBCDemo01" options="-parameters" />
     </option>
   </component>
