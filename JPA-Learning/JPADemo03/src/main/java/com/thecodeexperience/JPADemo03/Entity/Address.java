@@ -5,6 +5,8 @@ import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.LazyToOne;
+import org.hibernate.annotations.LazyToOneOption;
 
 @Getter
 @Setter
@@ -28,6 +30,6 @@ public class Address {
     private String zipcode;
 
     //@JsonBackReference
-    @OneToOne(mappedBy = "address",fetch = FetchType.EAGER)
+    @OneToOne(mappedBy = "address",fetch = FetchType.LAZY)
     private Student student;
 }

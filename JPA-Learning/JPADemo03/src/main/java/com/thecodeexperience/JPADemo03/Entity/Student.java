@@ -31,6 +31,5 @@ public class Student {
 
     //@JsonManagedReference
     @OneToOne(cascade = CascadeType.ALL)
-    //@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     private Address address;
 }
