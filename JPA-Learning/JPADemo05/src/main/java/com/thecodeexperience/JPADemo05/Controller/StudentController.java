@@ -1,5 +1,6 @@
 package com.thecodeexperience.JPADemo05.Controller;
 
+import com.thecodeexperience.JPADemo05.CO.StudentCO;
 import com.thecodeexperience.JPADemo05.Entity.Address;
 import com.thecodeexperience.JPADemo05.Entity.Student;
 import com.thecodeexperience.JPADemo05.Service.StudentService;
@@ -21,6 +22,11 @@ public class StudentController {
     @PostMapping
     public ResponseEntity<Student> createStudent(@RequestBody Student student) {
         return ResponseEntity.ok(studentService.saveStudent(student));
+    }
+
+    @PutMapping
+    public ResponseEntity<Student> updateStudent(@RequestBody StudentCO studentCO) {
+        return ResponseEntity.ok(studentService.updateStudent(studentCO));
     }
 
     // ✅ Get all students

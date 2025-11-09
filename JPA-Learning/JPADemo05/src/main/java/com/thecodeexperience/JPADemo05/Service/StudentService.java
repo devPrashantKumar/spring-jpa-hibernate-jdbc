@@ -1,5 +1,7 @@
 package com.thecodeexperience.JPADemo05.Service;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.thecodeexperience.JPADemo05.CO.StudentCO;
 import com.thecodeexperience.JPADemo05.Entity.Address;
 import com.thecodeexperience.JPADemo05.Entity.Student;
 import com.thecodeexperience.JPADemo05.Repository.AddressRepository;
@@ -29,11 +31,27 @@ public class StudentService {
         return  addresses;
     }
 
+    public Student updateStudent(StudentCO studentCO) {
+        Student student = Student.builder().id(studentCO.getId())
+                .name(studentCO.getName())
+                .email(studentCO.getEmail())
+                .addresses(studentCO.getAddresses().stream().map((addressCO)->
+                    Address.builder().id(addressCO.getId())
+                            .city(addressCO.getCity())
+                            .street(addressCO.getStreet())
+                            .zipcode(addressCO.getZipcode())
+                            .build()
+                ).toList()).build();
+        for(Address address : student.getAddresses()) address.setStudent(student);
+        return studentRepository.save(student);
+    }
+
     public Optional<Student> getStudentById(Long id) {
         return studentRepository.findById(id);
     }
 
     public Student saveStudent(Student student) {
+        for(Address address : student.getAddresses()) address.setStudent(student);
         return studentRepository.save(student);
     }
 

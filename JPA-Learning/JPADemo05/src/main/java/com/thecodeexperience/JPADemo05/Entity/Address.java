@@ -12,6 +12,10 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@JsonIdentityInfo(
+        generator = ObjectIdGenerators.PropertyGenerator.class,
+        property = "id"
+)
 public class Address {
 
     @Id
@@ -21,4 +25,7 @@ public class Address {
     private String street;
     private String city;
     private String zipcode;
+
+    @ManyToOne
+    private Student student;
 }

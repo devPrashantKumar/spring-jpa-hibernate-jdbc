@@ -14,6 +14,5 @@
     - HibernateProxy object and PersistanceBag object 
     - orphan removal
 - JPADemo05 - Spring JPA OneToMany Mapping Unidirectional Mapping
-    - explicit table for relationship , or relationship maintain in child table
-    - HibernateProxy object and PersistanceBag object
-    - orphan removal
+    - owingEntity and inverseOwingEntity
+    - child removal issue in case of orphanRemoval=false
