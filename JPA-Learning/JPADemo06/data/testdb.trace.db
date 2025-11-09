@@ -1,0 +1,3 @@
+2025-11-09 12:32:16.073444+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]STUDENTS"; expected "SAVEPOINT, SCRIPT, SHUTDOWN"; SQL statement:
+STUDENTS [42001-224]

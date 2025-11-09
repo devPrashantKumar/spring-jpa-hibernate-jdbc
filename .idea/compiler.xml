@@ -9,7 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Demo0" />
       </profile>
-      <profile name="Annotation profile for JPADemo03" enabled="true">
+      <profile name="Annotation profile for JPADemo04" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -21,7 +21,7 @@
         <module name="JPADemo03" />
         <module name="JPADemo02" />
       </profile>
-      <profile name="Annotation profile for JPADemo04" enabled="true">
+      <profile name="Annotation profile for JPADemo06" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -31,6 +31,7 @@
         </processorPath>
         <module name="JPADemo05" />
         <module name="JPADemo04" />
+        <module name="JPADemo06" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -45,6 +46,7 @@
       <module name="JPADemo03" options="-parameters" />
       <module name="JPADemo04" options="-parameters" />
       <module name="JPADemo05" options="-parameters" />
+      <module name="JPADemo06" options="-parameters" />
       <module name="SpringJDBCDemo01" options="-parameters" />
     </option>
   </component>
