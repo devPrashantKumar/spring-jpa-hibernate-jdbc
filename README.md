@@ -9,3 +9,11 @@
     - Jackson recursion issue. 
       - JsonManagedReference and JsonBackReference
       - JsonIdentityReference
+- JPADemo04 - Spring JPA OneToMany Mapping Unidirectional Mapping
+    - explicit table for relationship , or relationship maintain in child table
+    - HibernateProxy object and PersistanceBag object 
+    - orphan removal
+- JPADemo05 - Spring JPA OneToMany Mapping Unidirectional Mapping
+    - explicit table for relationship , or relationship maintain in child table
+    - HibernateProxy object and PersistanceBag object
+    - orphan removal
