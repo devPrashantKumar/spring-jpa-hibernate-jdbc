@@ -19,3 +19,5 @@
 - JPADemo06 - Spring JPA ManyToOne Mapping Unidirectional Mapping
 - JPADemo07 - Spring JPA ManyToMany Mapping Unidirectional Mapping
 - JPADemo08 - Spring JPA ManyToMany Mapping Bidirectional Mapping
+  - jackson parsing issue resolved by manually setting objects
+  - bidirectional insertion issue in case of update, need to be handled manually
