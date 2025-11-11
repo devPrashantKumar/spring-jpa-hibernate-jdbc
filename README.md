@@ -17,3 +17,5 @@
     - owingEntity and inverseOwingEntity
     - child removal issue in case of orphanRemoval=false
 - JPADemo06 - Spring JPA ManyToOne Mapping Unidirectional Mapping
+- JPADemo07 - Spring JPA ManyToMany Mapping Unidirectional Mapping
+- JPADemo08 - Spring JPA ManyToMany Mapping Bidirectional Mapping

@@ -9,7 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Demo0" />
       </profile>
-      <profile name="Annotation profile for JPADemo04" enabled="true">
+      <profile name="Annotation profile for JPADemo03" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -21,7 +21,7 @@
         <module name="JPADemo03" />
         <module name="JPADemo02" />
       </profile>
-      <profile name="Annotation profile for JPADemo06" enabled="true">
+      <profile name="Annotation profile for JPADemo07" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -29,9 +29,10 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
         </processorPath>
+        <module name="JPADemo07" />
+        <module name="JPADemo06" />
         <module name="JPADemo05" />
         <module name="JPADemo04" />
-        <module name="JPADemo06" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -47,6 +48,7 @@
       <module name="JPADemo04" options="-parameters" />
       <module name="JPADemo05" options="-parameters" />
       <module name="JPADemo06" options="-parameters" />
+      <module name="JPADemo07" options="-parameters" />
       <module name="SpringJDBCDemo01" options="-parameters" />
     </option>
   </component>
