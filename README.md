@@ -13,7 +13,7 @@
     - explicit table for relationship , or relationship maintain in child table
     - HibernateProxy object and PersistanceBag object 
     - orphan removal
-- JPADemo05 - Spring JPA OneToMany Mapping Unidirectional Mapping
+- JPADemo05 - Spring JPA OneToMany Mapping Bidirectional Mapping
     - owingEntity and inverseOwingEntity
     - child removal issue in case of orphanRemoval=false
 - JPADemo06 - Spring JPA ManyToOne Mapping Unidirectional Mapping
